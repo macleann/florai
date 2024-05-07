@@ -1,8 +1,8 @@
 # FlorAI
 
-This site will allow users to sign in with Google or create an account manually, enter their zip code, see upcoming weather data in their dashboard along with watering and fertilization schedules, and maybe recommend other plants with similar care instructions. In a separate form, users will be able to add their plants, a photo of their plants, care instructions, or use a 'Prefill with AI' button to let a custom OpenAI agent fill all care instructions fields for them (hopefully based on zip). Users will also be able to view details about each plant, make any edits regarding care instructions and add any notes or mark the plant as watered and/or fertilized. Waterings and fertilizations will populate a log event that will also be stored on each plant's detail page as well as a section in the dashboard showing the previous 5 or so logs in addition to populating a dedicated log page. There will also be a schedule page that will show which plants will need waterings in the current month.
+This app will allow users to sign in with Google or create an account manually, enter their zip code, see upcoming weather data in their dashboard along with watering and fertilization schedules, and maybe recommend other plants with similar care instructions. In a separate form, users will be able to add their plants, a photo of their plants, care instructions, or use a 'Prefill with AI' button to let a custom OpenAI agent fill all care instructions fields for them (hopefully based on zip). Users will also be able to view details about each plant, make any edits regarding care instructions and add any notes or mark the plant as watered and/or fertilized. Waterings and fertilizations will populate a log event that will also be stored on each plant's detail page as well as a section in the dashboard showing the previous 5 or so logs in addition to populating a dedicated log page. There will also be a schedule page that will show which plants will need waterings in the current month.
 
-I do not plan to implement a desktop compatible version of this application. The ultimate goal, to which I've done zero research into, is to develop this to be an Android app and avoiding deployment to a domain that people can visit if I can help it. I've heard Kotlin is used commonly for Android apps. I don't have any plans to pay for Apple's developer license to release an iOS build with Swift as it seems pretty steep for the passion project of a (currently) unemployed developer.
+This is my first foray into developing an application for mobile devices. I'm unsure whether I'm going to release this as an iOS app since I'm pretty sure it costs $99 for an Apple developer license and I'm unemployed. The current plan is to release this as an Android app.
 
 [Take a look at the wireframe here.](https://www.figma.com/file/Z2fpMUHFPUmYA94A2G6FqP/Plant-Tracker-App?type=design&node-id=0%3A1&mode=design&t=UyYgAtxL0NLSfF9k-1) [View the ERD here.](https://dbdiagram.io/d/plant-tracker-app-663513885b24a634d0744bbd)
 
@@ -10,9 +10,9 @@ I do not plan to implement a desktop compatible version of this application. The
 
 - Track and manage plant care right in the app by creating, updating, and (hopefully not) deleting plants
 - Retroactively log care events if the app isn't used on date of watering/fertilization
-- Weather API via [OpenWeather](https://openweathermap.org/api)
+- Weather API via [Open-Meteo](https://open-meteo.com/en/docs)
 - Care assistance from AI via [OpenAI's API](https://openai.com/api)
-- Image hosting via [Cloudinary](https://cloudinary.com/documentation/image_upload_api_reference)? Not sure how feasible this is now
+- Image hosting possibly via [Cloudinary](https://cloudinary.com/documentation/image_upload_api_reference)
 - Sign in with Google or create an account manually
 - Finally if all goes according to plan, a mobile app for Android
 
