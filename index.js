@@ -9,6 +9,10 @@ import { store } from './src/app/store';
 import { Provider } from 'react-redux';
 import React from 'react';
 
+if (__DEV__) {
+  require("./ReactotronConfig");
+}
+
 AppRegistry.registerComponent(appName, () => () => (
   <React.StrictMode>
     <Provider store={store}>

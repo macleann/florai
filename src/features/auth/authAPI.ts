@@ -24,8 +24,9 @@ export const logoutUser = async (token: string) => {
    });
 
    if (!response.ok) {
-         throw new Error('Logout failed');
+      const errorData = await response.json();
+      throw new Error(`Logout failed: ${JSON.stringify(errorData)}`);
    }
 
-   return response.json();
+   return;
 };

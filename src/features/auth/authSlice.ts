@@ -49,7 +49,10 @@ export const authSlice = createSlice({
       .addCase(logout.fulfilled, (state, action: PayloadAction<null>) => {
         state.status = 'idle';
         state.token = null;
-      });
+      })
+      .addCase(logout.rejected, (state) => {
+        state.status = 'failed';
+      })
  },
 });
 
